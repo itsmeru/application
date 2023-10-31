@@ -34,7 +34,7 @@ body{
 }
 .picture{
     flex:none;
-    width: 9%;
+    width: 10%;
 }
 .text{
     flex:auto;
@@ -42,5 +42,33 @@ body{
 p {
     margin-block-start: 4px;
     margin-inline-start: 5px;
+}
+img{
+    width:100%; height:auto; align:left;
+}
+@media(max-width:1000px){
+    .content{
+        font-size: 20px;
+    }
+    .article{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+}
+@media(max-width:500px){
+    .content{
+        font-size: 16px;
+    }
+    .article{
+        font-size: 12px;
+    }
+    .title{
+        font-size: 26px;
+    }
+ 
+
 }
 
