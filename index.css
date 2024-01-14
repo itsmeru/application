@@ -39,16 +39,19 @@ body{
     flex:auto;
 }
 p {
-    margin-block-start: 5px;
+margin-block-start: 5px;
     margin-inline-start:8px;
     white-space: pre-line;
     margin-bottom: 5px;
 }
 img{
-    width:100%; height:auto; align:left; 
+    max-width:100%; height:auto; align:left; 
 }
 li{
     padding-left: 8px;
+}
+ul{
+    margin: 5px;
 }
 @media(max-width:1000px){
     .content{
