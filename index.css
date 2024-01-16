@@ -39,6 +39,7 @@ body{
     flex:auto;
 }
 p {
+    text-indent: 1em;
     margin-block-start: 5px;
     margin-inline-start:8px;
     margin-bottom: 5px;
@@ -55,6 +56,14 @@ li{
 ul{
     margin: 5px;
 }
+input[type="checkbox"]:checked ~ .portlet-content {
+    grid-template-rows: 1fr;
+  }
+  .portlet-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 400ms grid-template-rows ease;
+  }
 @media(max-width:1000px){
     .content{
         font-size: 20px;
