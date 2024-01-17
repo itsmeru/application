@@ -38,12 +38,16 @@ body{
 .text{
     flex:auto;
 }
+.topic{
+    font-weight: bold;
+    border: 1px solid black;
+}
 p {
-    text-indent: 1em;
+    text-indent: 2em;
     margin-block-start: 5px;
     margin-inline-start:8px;
     margin-bottom: 5px;
-    margin-right:2px;
+    margin-right:5px;
     text-align:justify;
 }
 
@@ -54,16 +58,9 @@ li{
     padding-left: 8px;
 }
 ul{
-    margin: 5px;
+    margin: 5px 5px 5px 20px;
 }
-input[type="checkbox"]:checked ~ .portlet-content {
-    grid-template-rows: 1fr;
-  }
-  .portlet-content {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: 400ms grid-template-rows ease;
-  }
+
 @media(max-width:1000px){
     .content{
         font-size: 20px;
